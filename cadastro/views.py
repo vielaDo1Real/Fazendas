@@ -296,7 +296,7 @@ def delete_video(request, id):
         return redirect(reverse('editar_cadastro', kwargs={"pk":fazenda_id}))
     
     else:
-        return redirect('accounts\login')
+        return redirect('accounts/login')
 
 def delete_audio(request, id):
     if request.user.is_authenticated:
